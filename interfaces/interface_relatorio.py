@@ -9,6 +9,7 @@ class InterfaceRelatorio(QMainWindow):
     
     def init_ui(self):
         self.setWindowTitle("Relatório de Faturamento")
+        self.resize(300, 200)
         
         layout = QVBoxLayout()
         

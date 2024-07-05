@@ -13,7 +13,8 @@ class InterfaceAtendente(QMainWindow):
     
     def init_ui(self):
         self.setWindowTitle("Gerenciamento de Pedidos - Atendente")
-        
+        self.resize(300, 200)
+
         layout = QVBoxLayout()
         
         self.botao_adicionar_pedido = QPushButton("Adicionar Pedido")

@@ -14,7 +14,7 @@ class JanelaCliente(QMainWindow):
     
     def init_ui(self):
         self.setWindowTitle("Sistema de Pedidos - Cliente")
-        self.resize(600, 400)
+        self.resize(300, 200)
         
         layout = QVBoxLayout()
 

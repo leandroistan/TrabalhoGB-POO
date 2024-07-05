@@ -9,6 +9,7 @@ class InterfaceCozinha(QMainWindow):
     
     def init_ui(self):
         self.setWindowTitle("Gerenciamento de Pedidos - Cozinha")
+        self.resize(300, 200)
         
         layout = QVBoxLayout()
         
