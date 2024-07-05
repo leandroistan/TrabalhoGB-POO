@@ -1,6 +1,7 @@
 class Pedido:
-    def __init__(self, id):
+    def __init__(self, id, numero_mesa=""):
         self.id = id
+        self.numero_mesa = numero_mesa
         self.itens = []
 
     def adicionar_item(self, item):

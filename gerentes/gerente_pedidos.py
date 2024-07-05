@@ -2,12 +2,17 @@ from collections import deque
 
 class GerentePedidos:
     def __init__(self):
+        self.pedidos = []
         self.pedidos = deque()
         self.em_preparacao = deque()
         self.entregues = deque()
     
-    def adicionar_pedido(self, pedido):
+    def adicionar_pedido(self, pedido, origem):
+        pedido.id = f"Pedido {origem.capitalize()} #{pedido.id} - Mesa {pedido.numero_mesa}"
         self.pedidos.append(pedido)
+
+    def obter_pedidos(self):
+        return self.pedidos
     
     def iniciar_preparacao(self):
         if self.pedidos:
